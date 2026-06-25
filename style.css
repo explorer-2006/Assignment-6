@@ -570,14 +570,14 @@ nav .nav-part-3{
 .section8{
     margin-top: 5rem;
     display: flex;
-    width: 100%;
-    height: 36rem;
+    width: calc(100vw-2px);
+    min-height: 49.5vw;
 }
 .section8 .sec8-left{
     background-image: url(https://www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&width=3600.0);
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: auto;
     width: 100%;
     flex: 1.3;
 }
@@ -608,8 +608,8 @@ nav .nav-part-3{
 }
 .section9{
     background-color: #9f6429;
-    width: 100%;
-    height: auto;
+    width: calc(100vw-2px);
+    min-height: 45vw;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -636,39 +636,42 @@ nav .nav-part-3{
     font-size: 0.9rem;
 }
 .sec9-bottom{
-    position: relative;
+    display: flex;
+    justify-content: center;  
     background-color: #ffcb96;
     height: 30.5rem;
+    width: 100%;
     border-radius: 10px;
     border: 0.5px solid black;
 }
-.sec9-product{
-    position: absolute;
-    top: -11%;
-    left: -2.5%;
+
+.sec9-contents{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4rem;
+    margin-right: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 }
 .sec9-product img{
     width: 41rem;
 }
 .sec9-pinfo{
-    position: absolute;
-    top: 12%;
-    left: 54%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    width: 25rem;
 }
 .sec9-pinfo #sec9-title h1{
     background-color: #f09f54;
 }
 .sec9-pinfo #sec9-content h1{
     font-size: 4rem;
-    width: 69%;
     line-height: 1;
 }
 .sec9-pinfo p{
-    width: 73%;
     font-family: figtree;
     font-size: 1.1rem;
     font-weight: 100;
