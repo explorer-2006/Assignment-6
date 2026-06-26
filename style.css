@@ -209,6 +209,10 @@ nav .nav-part-3{
     justify-content: center;
     overflow: hidden;
 }
+/* .product-img img{
+    width: 100%;
+    height: 75%;
+} */
 .product:nth-child(1) .product-img{
     background-color: #c1ee91;
 }
@@ -226,7 +230,7 @@ nav .nav-part-3{
     width: 100%;
 }
 .product-img img:hover{
-    width: 110%;
+    scale: 1.1;
     cursor: pointer;
 }
 
@@ -365,6 +369,44 @@ nav .nav-part-3{
     color: #999;
     font-family: reckless;
     font-size: 2rem;
+}
+.vibe-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+}
+
+.vibe-label {
+    font-family: roboto;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4c4844;
+}
+
+.vibe-list {
+    display: flex;
+    flex-wrap: wrap;        
+    gap: 0.5rem;
+}
+
+.vibe-tag {
+    font-family: reckless;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #2a2857;
+    background-color: #d8e8f8;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.vibe-tag:hover {
+    background-color: #a2c9fc;
 }
 .section5{
     width: 100%;
@@ -785,4 +827,143 @@ nav .nav-part-3{
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #2a2857;
+}
+.section12{
+    width: 100%;
+    height: 45rem;
+    background-image: url(https://www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-14x_SQ_1_d549e6bb-f1ad-4b36-a851-05e1af195a31.webp?v=1771593222&width=3150.0);
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 0.5px solid black;
+}
+.section12 .sec12-left{
+    background-color: #f26412;
+    margin: 3rem;
+    border: 0.5px solid black;
+    border-radius: 12px;
+    height: calc(100% - 6rem);
+    width: 28rem;
+    padding: 4rem 10rem 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.sec12-left #sec12-content h1{
+    color: white;
+    font-size: 3.5rem;
+}
+
+footer {
+    width: 100%;
+    background-color: #c0dbff;
+    padding: 6rem 2.5rem 10rem 2.5rem;
+}
+
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+
+}
+.footer-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    gap: 2rem;
+}
+.footer-email input {
+    width: 400px;
+    padding: 1rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background: white;
+    font-family: figtree;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+}
+
+.footer-email input::placeholder {
+    color: #aaa;
+    font-family: figtree;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 30%;
+}
+
+.social-icon {
+    height: 48px;
+    width: 48px;
+    border: 1.5px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.8rem;
+    background: transparent;
+    transition: background-color 0.1s ;
+    padding: 7px;
+}
+
+.social-icon:hover {
+    background-color: white;
+    font-size: 1.7rem;
+    height: 46px;
+    width: 46px;
+}
+.footer-bottom {
+    background-color: #2a2857;
+    border-radius: 14px;
+    padding: 3.5rem 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1 0 0;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.footer-col h4 {
+    font-family: reckless;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.footer-col ul li {
+    font-family: figtree;
+    font-size: 1.1rem;
+    color: #9391a1;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.footer-col ul li:hover {
+    color: white;
 }
