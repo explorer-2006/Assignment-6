@@ -21,6 +21,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 body{
     background-color: #fbf9eb;
 }
@@ -61,6 +65,9 @@ nav .nav-part-1 h3{
     gap: 8px;
     font-weight: 300;
     cursor: pointer;
+}
+.nav-hamburger {
+    display: none;
 }
 
 .header-menu__title-icon{
@@ -209,10 +216,7 @@ nav .nav-part-3{
     justify-content: center;
     overflow: hidden;
 }
-/* .product-img img{
-    width: 100%;
-    height: 75%;
-} */
+
 .product:nth-child(1) .product-img{
     background-color: #c1ee91;
 }
@@ -966,4 +970,491 @@ footer {
 
 .footer-col ul li:hover {
     color: white;
+}
+
+@media (max-width: 1024px) {
+
+    nav {
+        padding: 0.9rem 1.5rem;
+    }
+    nav .nav-part-3 h3{
+        display: none;
+    }
+    nav .nav-part-1 {
+        display: none;
+    }
+    .nav-hamburger {
+        display: flex;
+        font-size: 2rem;
+        cursor: pointer;
+        opacity: 0.6;
+    }
+    main{
+        background-image: url(https://www.twoleavestea.com/cdn/shop/files/matcha_mobile.png?v=1779455800&width=720);
+    }
+    .hero-section{
+        text-align: center;
+        left: 0%;
+        top: 77%;
+        width: 100%;
+    }
+    .hero-section .hero-title h1{
+        font-size: 4rem;
+    }
+    .hero-section .hero-abt p{
+        width: 100%;
+        font-size: 1.15rem;
+    }
+    .hero-shop .shopNow{
+        width: 98%;
+    }
+
+
+
+    .section1 #sec1-content{
+        padding: 5vw 33vw 4vw 33vw;
+    }
+
+    #sec1-content h1 {
+        font-size: 3.5vw;
+    }
+
+    .section2 #sec2-best {
+        margin-bottom: 2rem;
+    }
+    .color-titles h1{
+        font-size: 2.5rem;
+    }
+
+    .section2 .sec2-products {
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+    .product-img {
+        height: 280px;
+    }
+    .product-name h3 {
+        font-size: 1.1rem;
+        width: 100%;       
+    }
+    .product-cat h4 {
+        font-size: 1rem;
+    }
+
+    .section3 .section3-contents{
+        padding: 0 0 0 2vw;
+    }
+   
+    .section3 .section3-contents #sec3-content h1 {
+        font-size: 2rem;
+    }
+    .search-bar{
+        width: 80%;
+    }
+    .search-bar input {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .search-bar input::placeholder {
+        font-size: 1.5rem;
+    }
+    .vibe-tags{
+        margin-top: 3rem;
+        margin-bottom: 0;
+    }
+    .vibe-tag {
+        font-size: 2rem;
+    }
+
+
+    .section5-contents .sec5-title h1 {
+        font-size: 5.2rem;    
+    }
+    #sec5-content{
+        padding: 0 15rem;
+    }
+    .section5-contents #sec5-content h1 {
+        font-size: 2rem;
+    }
+    .section5-contents .sec5-icons {
+        gap: 4rem;
+    }
+    .section5 {
+        height: auto;
+        min-height: 100rem;
+    }
+    .section5-contents .white-btn{
+        width: 100%;
+    }
+    .section5-contents .white-btn button{
+        width: 95%;
+    }
+
+
+
+    .section6 .section6-contents{
+        padding: 5rem 0 0 2vw;
+    }
+    .section6-contents #sec6-content h1 {
+        font-size: 3rem;
+    }
+
+   
+
+    .section7 .sec7-products{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec7-product {
+        min-height: 380px;
+    }
+    .sec7-bar {
+        padding: 0.6rem 0.4rem;
+    }
+    .sec7-bar-left img {
+        width: 100px;
+        height: 100px;
+    }
+    .sec7-bar-left span {
+        font-size: 1.3rem;
+        max-width: 90px;
+    }
+    .sec7-shop-btn {
+        padding: 0.6rem 0.5rem;
+        font-size: 1.3rem;
+    }
+
+
+    .section8 {
+        flex-direction: column;  
+        min-height: auto;
+    }
+    .section8 .sec8-left {
+        height: 880px;
+        flex: none;
+    }
+    .section8 .sec8-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem 0 5rem 0;
+        text-align: center;
+    }
+    .sec8-right h1 {
+        font-size: 3rem;
+    }
+
+
+    .section9 .sec9-top{
+        padding: 6rem 13rem;
+        gap: 0.8rem
+    }
+   
+    .sec9-top h1{
+        font-size: 4rem;
+        line-height: 0.9;
+        letter-spacing: 0;
+    }
+    .sec9-product img {
+        transform: translateX(-10%);
+    
+    }
+    .sec9-pinfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1.3rem;
+        width: 100%;
+    }
+    .sec9-pinfo #sec9-content h1 {
+        font-size: 3rem;
+    }
+    .sec9-bottom {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .sec9-contents {
+        flex-direction: column;   
+        align-items: center;
+        padding: 2rem;
+        margin-right: 0;
+        gap: 2rem;
+    }
+
+
+    .section10 #sec10-content{
+        padding: 6vw 30vw 2vw 2vw;
+        text-align: start;
+        width: 100%;
+    }
+    #sec10-content h1 {
+        font-size: 4vw;
+    }
+
+    .sec11-img {
+        min-height: 240px;
+    }
+    .sec11-title p {
+        font-size: 0.85rem;
+    }
+
+    
+    .section12 .sec12-left {
+        width: 22rem;
+        padding: 3rem 2rem;
+    }
+    .sec12-left #sec12-content h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .footer-email {
+        width: 50%;
+    }
+    .footer-col {
+        min-width: 120px;
+    }
+    .footer-col h4 {
+        font-size: 1.2rem;
+    }
+    .footer-col ul li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    main{
+        border: none;
+        height: 75vh;       
+        background-position: top center;
+    }
+
+    /* HERO */
+    .hero-section {
+        top: 70%;
+        left: 0%;
+        right: 0%; 
+    }
+    .hero-section .hero-title h1 {
+        font-size: 2rem;
+    }
+    .hero-section .hero-abt p {
+        width: 100%;   
+        font-size: 0.9rem;
+    }
+    .blue-btn {
+        font-size: 0.95rem;
+        padding: 0.8rem 2.5rem;
+    }
+
+    /* SECTION 1 */
+    .section1 {
+        height: auto;
+        padding: 4rem 0;
+    }
+    .section1 #sec1-content {
+        padding: 0 6vw;
+    }
+    #sec1-content h1 {
+        font-size: 6vw;
+    }
+
+    /* SECTION 2 — stack cards */
+    .section2 .sec2-products {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        gap: 5rem;
+    }
+    .product {
+        flex: none;
+        width: 100%;
+    }
+    .product-img {
+        height: 500px;
+    }
+    .product-name h3 {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .color-titles h1 {
+        font-size: 2.5rem;
+    }
+
+    /* SECTION 3 */
+    .section3 {
+        padding: 4rem 0;
+    }
+    .section3 .section3-contents {
+        padding: 0 0 0 5vw;
+        gap: 1.2rem;
+    }
+    .section3 .section3-contents #sec3-content h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .search-bar input {
+        width: 90%;
+        font-size: 1.2rem;
+        padding: 1rem 1.2rem;
+    }
+    .search-bar input::placeholder {
+        font-size: 1.2rem;
+    }
+    .vibe-tag {
+        font-size: 1.1rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .vibe-tags {
+        margin-top: 2rem;
+    }
+
+    /* SECTION 5 */
+    .section5-contents .sec5-title h1 {
+        font-size: 4.5rem;
+    }
+    .section5-contents #sec5-content{
+        padding: 0 1rem;
+    }
+    .section5-contents #sec5-content h1 {
+        font-size: 1.8rem;
+    }
+    .section5-contents .sec5-icons {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .section5 {
+        height: auto;
+        min-height: 120rem;
+    }
+    .section5 .section5-contents {
+        gap: 8rem;
+    }
+
+    /* SECTION 6 */
+    .section6 .section6-contents {
+        padding: 4rem 0 4rem 5vw;
+    }
+    .section6-contents #sec6-content h1 {
+        font-size: 2.2rem;
+    }
+
+    /* SECTION 7 — stack review cards */
+    .section7 .sec7-products {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .sec7-product {
+        flex: none;
+        width: 100%;
+        min-height: auto;
+    }
+    .sec7-bar-left img{
+        width: 60px;
+        height: 60px;
+    }
+    .sec7-bar-left span{
+        font-size: 0.8rem;
+    }
+    .sec7-shop-btn{
+        font-size: 1rem;
+    }
+
+    /* SECTION 8 */
+    .section8{
+        width: 100vw;
+    }
+    .sec8-right h1 {
+        font-size: 3rem;
+    }
+    .section8 .sec8-right {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    /* SECTION 9 */
+    
+    .section9 .sec9-top{
+        width: 100%;
+        padding: 3rem 0;
+    
+    }
+    .sec9-top h1 {
+        font-size: 2.8rem;
+    }
+    .sec9-product img {
+        width: 100%;
+    }
+    .sec9-pinfo #sec9-content h1 {
+        font-size: 2.2rem;
+    }
+
+    /* SECTION 10 */
+    .section10 {
+        height: auto;
+        padding: 4rem 0;
+    }
+    .section10 #sec10-content {
+        padding: 2rem 5vw;
+    }
+    #sec10-content h1 {
+        font-size: 6vw;
+    }
+
+    /* SECTION 11 — 2x2 grid */
+    .section11 .sec11-products {
+        flex-wrap: wrap;
+    }
+    .sec11-product {
+        flex: 1 1 calc(50% - 0.75rem);  /* 2 cards per row */
+        width: calc(50% - 0.75rem);
+    }
+    .sec11-img {
+        min-height: 200px;
+    }
+    .sec11-title p {
+        font-size: 0.75rem;
+    }
+
+    /* SECTION 12 */
+    .section12 {
+        height: 35rem;
+        background-position: right;
+    }
+    .section12 .sec12-left {
+        width: calc(100% - 2rem);
+        margin: 1rem;
+        height: calc(100% - 2rem);
+        padding: 2rem;
+    }
+    .sec12-left #sec12-content h1 {
+        font-size: 2.2rem;
+    }
+
+    /* FOOTER */
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .footer-email {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .footer-email input {
+        width: 100%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-col {
+        min-width: 100%;
+    }
 }
